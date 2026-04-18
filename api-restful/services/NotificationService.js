@@ -19,7 +19,7 @@ async create(type, message, ticketId) {
   };
 
   if (type === "email") {
-    console.log("📧 Enviando correo..."); // 👈 DEBUG
+    console.log("📧 Enviando correo...");
 
     await this.emailService.sendEmail({
       to: "sunmi.casano@tecsup.edu.pe",

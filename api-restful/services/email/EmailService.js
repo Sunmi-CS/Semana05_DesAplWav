@@ -6,13 +6,13 @@ class EmailService {
   constructor() {
     this.mode = process.env.MAILER_MODE || "SAFE";
 
-    console.log("📌 Modo Email:", this.mode); // 👈 DEBUG
+    console.log("📌 Modo Email:", this.mode);
 
     if (this.mode === "REAL") {
       this.transporter = nodemailer.createTransport({
         host: process.env.MAILER_HOST,
-        port: Number(process.env.MAILER_PORT), // 👈 IMPORTANTE (number)
-        secure: false, // 👈 Mailtrap usa false
+        port: Number(process.env.MAILER_PORT), 
+        secure: false, 
         auth: {
           user: process.env.MAILER_EMAIL,
           pass: process.env.MAILER_SECRET_KEY,
@@ -32,7 +32,7 @@ class EmailService {
       return true;
     }
 
-    console.log("🚀 Intentando enviar correo..."); // 👈 DEBUG
+    console.log("🚀 Intentando enviar correo..."); 
 
     try {
       const info = await this.transporter.sendMail({
@@ -46,7 +46,7 @@ class EmailService {
       return true;
 
     } catch (error) {
-      console.error("❌ ERROR COMPLETO:", error); // 👈 CLAVE para detectar fallo
+      console.error("❌ ERROR COMPLETO:", error);
 
       console.log("📧 [FALLBACK SIMULADO]");
       console.log("Mensaje:", htmlBody);
