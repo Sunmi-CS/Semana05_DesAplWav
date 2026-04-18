@@ -127,6 +127,22 @@
       "status": "nuevo",
       "priority": "medium",
       "assignedUser": null
+    },
+    {
+      "id": "a2a36a6c-50d9-4a70-a62a-1d12aefe26c8",
+      "title": "Prueba Mailtrap 5.0",
+      "description": "Correo funcionando",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "9a08b68f-7cee-43b3-8e84-dfd04fae8644",
+      "title": "Prueba Mailtrap 6.0",
+      "description": "Correo funcionando",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
     }
   ],
   "notifications": [
@@ -269,6 +285,20 @@
       "message": "Nuevo ticket creado: Prueba Mailtrap 4.0",
       "status": "pending",
       "ticketId": "6841e7e3-df44-4417-bf24-63288c111d94"
+    },
+    {
+      "id": "56b0b936-27ce-4a7a-94cd-17a348ddd073",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba Mailtrap 5.0",
+      "status": "pending",
+      "ticketId": "a2a36a6c-50d9-4a70-a62a-1d12aefe26c8"
+    },
+    {
+      "id": "daa7ff4e-f449-4376-a7bc-0bc3159fded8",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba Mailtrap 6.0",
+      "status": "pending",
+      "ticketId": "9a08b68f-7cee-43b3-8e84-dfd04fae8644"
     }
   ]
 }
